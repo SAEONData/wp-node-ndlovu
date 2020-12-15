@@ -1,0 +1,295 @@
+/*
+ Theme Name:   ndlovu
+ Theme URI:    http://saeon.ac.za
+ Description:  SAEON Child Theme
+ Author:       SAEON
+ Author URI:   http://saeon.ac.za
+ Template:     saeon
+ Version:      1.0.1
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         ndlovu,saeon
+ Text Domain:  ndlovu
+*/
+/* 
+Colours:
+Blue: #5987c6
+Dark grey: #222222
+Lightgrey: #e9e8ed
+Blue: #5987c6
+
+
+Shadow:
+0px 4px 22px rgba(0,0,0,0.5)
+*/
+body.saeonhome {
+    padding-top: 0;
+    color:#222222;
+}
+a{
+    color:#5987c6;
+}
+.txt-shadow{
+    text-shadow: 0px 4px 22px rgba(0,0,0,0.5);
+}
+.txt-shadow-dark {
+    text-shadow: 5px 4px 10px rgba(0,0,0,1);
+}
+.box-shadow,.btn-box-shadow .elementor-button{
+    -webkit-box-shadow: 0px 4px 22px rgba(0,0,0,0.5);
+    -moz-box-shadow:    0px 4px 22px rgba(0,0,0,0.5);
+    box-shadow:         0px 4px 22px rgba(0,0,0,0.5);
+}
+#home-meu,#home-meu *,
+.saeonhome .sn-noscroll,.saeonhome .sn-noscroll #cssmenu,
+.saeon-header,input[type="submit"]{
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+.blurred-bg{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+/* Home */
+.saeonhome .saeon-header + main {
+    padding-top: 0px;
+}
+.saeonhome .sn-noscroll #sn-cssmenu {
+    top: -128px;
+}
+@media only screen and (min-width: 769px) {
+    #home-meu{
+        position: fixed;
+        top: 0px;
+        right: 20px;
+        width: 150px;
+    }
+    #home-meu:hover{
+        cursor: pointer;
+    }
+    #home-meu:hover .elementor-icon-box-icon {
+        margin-right: 7px;
+    }
+    #home-meu:hover .elementor-icon {
+        color: #222222;
+    }
+    #home-meu:hover .elementor-icon-box-title {
+        color: #222222;
+    }
+    .saeonhome .sn-noscroll,.saeonhome .sn-noscroll #cssmenu{
+        top: -128px;
+    }
+}
+/* Buttons */
+body .elementor-widget-button .elementor-button,
+.btn-orange,.btn.sn-btn:hover,
+.btn-orange-hover.elementor-widget-button:hover .elementor-button{
+    background-color: #5987c6;
+    border: 2px solid #5987c6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.btn-wht.elementor-widget-button .elementor-button,
+.btn-wht-hover.elementor-widget-button:hover .elementor-button {
+    background-color: #fff;
+    border-color: #fff;
+    color:#5987c6;
+}
+.btn-grey.elementor-widget-button .elementor-button,
+body .elementor-widget-button:hover .elementor-button,
+.btn-grey-hover.elementor-widget-button:hover .elementor-button{
+    background-color: #222222;
+    border-color: #222222;
+    color:#fff;
+}
+.btn-blue.elementor-widget-button .elementor-button,
+.btn,.btn.sn-btn,
+.btn-blue-hover.elementor-widget-button:hover .elementor-button {
+    background-color: #5987c6;
+    border-color: #5987c6;
+    color: #fff;
+}
+.btn-whtbrd.elementor-widget-button .elementor-button,
+.btn-whtbrd-hover.elementor-widget-button:hover .elementor-button {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+/* Typography */
+h1{
+    font-size:42px;
+    color: #5987c6;
+}
+h3,body .elementor-widget-heading .elementor-heading-title{
+    color: #5987c6;
+}
+/*Menu */
+@media only screen and (min-width: 769px) {
+    #cssmenu ul ul li a {
+        width: 270px;
+    }
+}
+@media screen and (max-width: 786px){
+    #saeon-title {
+        padding: 0 60px 0 0;
+        width: 236px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+/* News */
+.news-heading-title{
+    color: #5987c6;
+    text-align: center;
+    margin: 0 auto;
+}
+.page-template-page_news #main{
+    padding-bottom:60px;
+}
+
+/* Comments */
+#respond { 
+    background: #e9e8ed;
+    padding:15px;
+    font-size: 14px;
+}
+#respond label{
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 100px;
+}
+#respond label[for="wp-comment-cookies-consent"]{
+    display: inline-block;
+    width: auto;
+}
+#respond input[type=text], textarea {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    padding: 5px 10px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #DDDDDD;
+    border-radius:3px;
+}
+#respond input[type=text]:focus,
+input[type=email]:focus, 
+input[type=url]:focus,
+textarea:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    margin: 5px 1px 3px 0px;
+    border: 2px solid rgba(81, 203, 238, 1);
+}
+input[type="submit"]{
+    background-color: #5987c6;
+    border: 2px solid #5987c6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 24px;
+    line-height: 1;
+    font-size: 15px;
+    padding: 12px 24px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+}
+input[type="submit"]:hover{
+    background-color: #222222;
+    border: 2px solid #222222;
+    cursor:pointer;
+}
+#comment{
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+.comment-form-author,.comment-form-email{
+    float:left;
+    width:50%;
+}
+.comment-form-url{
+    display:none;
+}
+/* Search */
+.sn-search-input{
+    height: 46px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 5px 20px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.sn-search-input input:focus {
+    outline: none;
+}
+.sn-search-input svg{
+    height: 30px;
+    float: left;
+    margin: 2px 15px 0 0;
+}
+.sn-search-input path{
+    fill: #222222;
+}
+.sn-search-input input{
+    line-height: 34px;
+    float: left;
+    font-size: 17px;
+    border: none;
+}
+/* Footer */
+#sn-footer img{
+    max-width: 300px;
+}
+/* News */
+.sn-date,.sn-newslist h4 a, .sn-news-block h2 {
+    color: #5987c6;
+}
+/* SAEON Theme */
+#sn-footer {
+    background: #5987c6;
+    padding-top: 40px;
+}
+#saeon-title strong {
+    color: #5987c6;
+}
+.sn-footer-copy {
+    background: #fff;
+    color: #5987c6;
+    margin-top:40px;
+}
+#sn-footer .sn-footer-copy a {
+    color: #222222;
+    text-decoration: none;
+    font-weight: 800;
+}
+#sn-cssmenu ul ul li a {
+    width: 270px;
+}
+/* Read more function - shorten text */
+.short-text .saeon-more-count{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+.saeon-more,.saeon-less{
+    color: #5987c6;
+    font-size: 14px;
+    margin-top: -10px;
+}
+.saeon-more:hover,.saeon-less:hover{
+    cursor: pointer;
+}
+/* News header */
+.page-template-page_news #primary {
+    padding-top: 128px;
+}
+.sn-post-header {
+    padding: 180px 15px 60px;
+}
